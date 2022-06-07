@@ -10,18 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_04_034042) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_07_131600) do
   create_table "estudiantes", force: :cascade do |t|
-    t.string "Nombre"
-    t.string "Apellido"
-    t.integer "Edad"
-    t.string "Cuerso"
-    t.string "Nota"
-    t.string "varchar"
+    t.string "nombre"
+    t.string "apellido"
+    t.string "edad"
+    t.string "curso"
+    t.integer "nota"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "cedula"
-    t.string "direccion"
   end
 
 end
