@@ -4,12 +4,12 @@ one:
   Nombre: MyString
   Apellido: MyString
   Edad: 1
-  Cuerso: MyString
+  Curso: MyString
   Nota: MyString
-  
+
 two:
   Nombre: MyString
   Apellido: MyString
   Edad: 1
-  Cuerso: MyString
+  Curso: MyString
   Nota: MyString

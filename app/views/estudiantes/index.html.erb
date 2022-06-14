@@ -1,14 +1,17 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Estudiantes</h1>
-
-<div id="estudiantes">
-  <% @estudiantes.each do |estudiante| %>
-    <%= render estudiante %>
-    <p>
-      <%= link_to "Ver este estudiante", estudiante %>
-    </p>
-  <% end %>
+<div class="col-log-8 mx-auto" style="background-color:#ccc">
+  <h1>Estudiantes</h1>
+  <%= link_to "Nuevo Estudiante", new_estudiante_path, class:"btn btn-success btn-lg mb-3" %>
+  <div id="estudiantes">
+    <% @estudiantes.each do |estudiante| %>
+     <div class="card shadow mb-3">
+      <div class="card-body ">
+         <%= render estudiante %>
+       <p>
+      <%= link_to "Ver este estudiante", estudiante, class:"btn btn-primary" %>
+      </p>
+      </div>
+    </div>
+    <% end %>
+  </div>
 </div>
-
-<%= link_to "Nuevo Estudiante", new_estudiante_path %>

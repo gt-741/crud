@@ -11,38 +11,39 @@
     </div>
   <% end %>
 
-  <div>
+  <div class= "form-group mt-3">
     <%= form.label :nombre, style: "display: block" %>
-    <%= form.text_field :nombre %>
+    <%= form.text_field :nombre, class:'form-control form-control-lg'  %>
   </div>
 
-  <div>
+  <div class= "form-group mt-3">
     <%= form.label :cedula, style: "display: block" %>
-    <%= form.text_field :cedula %>
+    <%= form.text_field :cedula, class:'form-control form-control-lg'  %>
   </div>
 
 
-  <div>
+  <div class= "form-group mt-3">
     <%= form.label :apellido, style: "display: block" %>
-    <%= form.text_field :apellido %>
+    <%= form.text_field :apellido, class:'form-control form-control-lg'  %>
   </div>
 
-  <div>
+  <div class= "form-group mt-3">
     <%= form.label :edad, style: "display: block" %>
-    <%= form.number_field :edad %>
+    <%= form.number_field :edad, class:'form-control form-control-lg' %>
   </div>
 
-  <div>
+  <div class= "form-group mt-3">
     <%= form.label :curso, style: "display: block" %>
-    <%= form.text_field :curso %>
+    <%= form.text_field :curso, class:'form-control form-control-lg'  %>
   </div>
 
-  <div>
+  <div class= "form-group mt-3">
     <%= form.label :nota, style: "display: block" %>
-    <%= form.text_field :nota %>
+    <%= form.text_field :nota, class:'form-control form-control-lg'  %>
   </div>
 
-    <div>
-    <%= form.submit %>
+    <div class= "form-group mt-3">
+   <%= form.submit 'Registrar', :class => 'btn btn-outline-primary btn-lg' %>
+   <%= link_to " Regresar a estudiantes", estudiantes_path, class: "btn btn-outline-primary btn-lg" %>
   </div>
 <% end %>
