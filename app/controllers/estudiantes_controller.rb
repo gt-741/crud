@@ -38,7 +38,7 @@ class EstudiantesController < ApplicationController
   def update
     respond_to do |format|
       if @estudiante.update(estudiante_params)
-        format.html { redirect_to estudiante_url(@estudiante), notice: "Estudiante was successfully updated." }
+        format.html { redirect_to estudiante_url(@estudiante), notice: "Datos actualizados..." }
         format.json { render :show, status: :ok, location: @estudiante }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class EstudiantesController < ApplicationController
     @estudiante.destroy
 
     respond_to do |format|
-      format.html { redirect_to estudiantes_url, notice: "Estudiante was successfully destroyed." }
+      format.html { redirect_to estudiantes_url, notice: "Estudiante eliminado ." }
       format.json { head :no_content }
     end
   end
